@@ -9,5 +9,4 @@ public class SpringDataRestOpenapiApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringDataRestOpenapiApplication.class, args);
     }
-
 }
