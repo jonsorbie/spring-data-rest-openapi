@@ -13,6 +13,7 @@ import static org.springframework.http.HttpMethod.*;
 @Component
 public class RestExposureConfig implements RepositoryRestConfigurer {
 
+    @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration restConfig, CorsRegistry cors) {
         restConfig.getExposureConfiguration()
             .withItemExposure((metadata, httpMethods) -> httpMethods.disable(DELETE, PATCH, PUT))
